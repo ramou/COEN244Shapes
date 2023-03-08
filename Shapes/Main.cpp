@@ -5,7 +5,6 @@
 #include "Rectangle.h"
 #include "Square.h"
 #include "Triangle.h"
-#include "Unrelated.h"
 #include "MultiShape.h"
 
 void foobar(Rectangle &r) {
