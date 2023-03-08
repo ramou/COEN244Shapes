@@ -39,6 +39,18 @@
     <ClCompile Include="MultiShape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Art.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Unrelated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Space.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shape.h">
@@ -60,6 +72,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MultiShape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Art.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unrelated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Space.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

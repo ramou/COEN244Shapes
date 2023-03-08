@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,23 +128,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Art.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="MultiShape.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Space.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Unrelated.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Art.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="MultiShape.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="Space.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Unrelated.h" />
+    <ClInclude Include="Wall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

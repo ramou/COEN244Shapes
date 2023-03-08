@@ -4,16 +4,65 @@
 #include <iostream>
 #include "Rectangle.h"
 #include "Square.h"
-int main()
-{
+#include "Triangle.h"
+#include "Unrelated.h"
+#include "MultiShape.h"
+
+void foobar(Rectangle &r) {
+    using namespace std;
+    cout << r.bottomLeft.x << " " << r.bottomLeft.y << endl;
+}
+
+int main() {
     using namespace std;
     Point p = { 0,0 };
     Rectangle r = { p, 5, 4 };
-    Square s = { p, 5 };
+
+    Rectangle r2 = { p, 3, 3 };
+    foobar(r);
+
+    MultiShape m;
+
+    cout << m.getName() << endl;
+
+    /*
+    m.add(r);
+    m.add(r2);
+    */
+
+    //m << r2 << r;
+    
+    m << r;
+    m << r2;
+
+    MultiShape m2 = (r2 + (r + r) + r2);
+
+    m2.draw();
+
+
+    Shape& s = (Shape&)r;
+
+
+    /*
+    cout << &s << endl;
+    cout << &r << endl;
+
+    cout << s.foo() << endl;
+    cout << r.foo() << endl;
+    //cout << ((Unrelated*)&r)->foo() << endl;
+
+    //cout << ((Unrelated*)&r)->draw() << endl;
+
+    //Triangle t = { p,p,p };
+
+
+    //Square s = { p, 5 };
 
     r.draw();
-
+    cout << "***************" << endl;
     s.draw();
+
+    */
 
 
 
